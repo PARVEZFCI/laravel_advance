@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Jobs\SendWelcomeEmailJob;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\OrderController;
 
 
 /*
@@ -31,3 +32,4 @@ Route::get('test', function () {
 Route::get('/users', [UserController::class,'index'])->name('users.index');
 Route::post('/users/search', [UserController::class,'search'])->name('users.search');
 Route::get('/event', [EventController::class, 'index']);
+Route::get('/orders',[OrderController::class,'index'])->name('orders.index');

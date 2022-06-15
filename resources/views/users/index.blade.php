@@ -1,5 +1,4 @@
 
-
 <form action="{{ route('users.search') }}" method="POST">
 @csrf
 <div class="form-group">
